@@ -1,12 +1,12 @@
 import React,{useState} from 'react';
-import {View,FlatList,Text} from 'react-native';
+import {View,FlatList,Text,TouchableOpacity} from 'react-native';
 import Style from './style'
 
 function ItemList({name}){
     return (
-        <View style={Style.item}>
+        <TouchableOpacity style={Style.item}>
             <Text>{name}</Text>
-        </View>
+        </TouchableOpacity>
     )
 }
 

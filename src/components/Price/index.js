@@ -12,7 +12,7 @@ export default function Price({coin}) {
 
     const cryptoDict = {"Bitcoin":"BTC","Monero":"XMR","Litecoin":"LTC","Etherum":"ETH"}
 
-    const [ticker,setTicker] = useState({});
+    const [ticker,setTicker] = useState({"ticker":{"price":0}});
 
     useEffect(()=>{
         async function getTicker() {

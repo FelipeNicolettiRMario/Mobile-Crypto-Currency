@@ -22,7 +22,6 @@ export default function Price({coin}) {
             else setTicker(response.data);
         }
         getTicker();
-        console.log(ticker)
     },[coin])
 
     return (
@@ -36,7 +35,7 @@ export default function Price({coin}) {
             </View>
             <Text style={Style.text}>{coin}</Text>
         </View>
-        <Text style={Style.priceText}>Price:{Math.round(ticker.ticker.price*100)/100} USD</Text>
+        <Text style={Style.priceText}>Price:US$ {Math.round(ticker.ticker.price*100)/100}</Text>
         </>
     )
 }

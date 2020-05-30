@@ -28,7 +28,7 @@ export default StyleSheet.create({
     },
     priceText:{
         marginTop:heightPercentageToDP(-8),
-        paddingLeft:widthPercentageToDP(45),
+        paddingLeft:widthPercentageToDP(44),
         fontSize:20
     }
 })
